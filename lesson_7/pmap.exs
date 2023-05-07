@@ -21,6 +21,6 @@ defmodule Demo do
 
   def run(n) do
     { ms, res } = :timer.tc(Demo, :pmap, [n])
-    { ms / 1000, res }
+    { ms / 1000000.0, res }
   end
 end
